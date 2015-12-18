@@ -11,12 +11,12 @@ A plugin that removes recursively the html empty elements (and their parents if 
 - You can also handle what text is considered empty WOW! much WOW
 
 # API
-Simple enough just use the default or extend it
-$('YourElement').noMoreEmptyElements({
-  excludeElements: ["IMG"], // Exclude elements even though they are empty // IMG the default
-  sameAsEmpty: ["&nbsp;"], // What to be considered as empty text inside an element // nbsp the default
-  isEmpty: function (element){} // Write your own function of what is empty.
-});
+Simple enough just use the default or extend it<br />
+$('YourElement').noMoreEmptyElements({<br />
+  **excludeElements:** ["IMG"], // Exclude elements even though they are empty // IMG the default<br />
+  **sameAsEmpty:** ["&nbsp;"], // What to be considered as empty text inside an element // nbsp the default<br />
+  **isEmpty:** function (element){} // Write your own function of what is empty.<br />
+});<br />
 
 By default isEmpty there is an empty $('YourSelectorOrClassOrWhatever').html() element. Also spaces, I don't like them I trim the string.
 Finally, isEmpty takes under consideration the first two arrays.
